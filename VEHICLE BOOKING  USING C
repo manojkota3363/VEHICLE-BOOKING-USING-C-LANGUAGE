@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void main()
+{
+    int n,d,amount,GST,M;
+printf("WELCOME TO GMR TOURS AND TRAVELS\nCHOOSE THE VEHICLE THAT YOU NEED\n1.INNOVA\n2.VERITO\n3.TEMPO\n4.AC BUS\n5.NON AC BUS");
+scanf("%d",&n);
+
+printf("ENTER THE DISTANCE THAT YOU WANT TO TRAVEL");
+scanf("%d",&d);
+ switch(n)
+ {
+
+ case 1:
+     amount=20*d;
+     printf("AMOUNT = %d\n",amount);
+     break;
+     case 2:
+     amount=12*d;
+     printf("AMOUNT = %d\n",amount);
+     break;
+     case 3:
+     amount=24*d;
+     printf("AMOUNT = %d\n",amount);
+     break;
+     case 4:
+     amount=35*d;
+     printf("AMOUNT = %d\n",amount);
+     break;
+     case 5:
+     amount=45*d;
+     printf("AMOUNT = %d\n",amount);
+     break;
+     default:
+     printf("NO NEGOTIATION");
+
+
+
+
+ }
+ GST=amount*0.05;
+ M=GST+amount;
+ printf("TAXES THAT TO BE ADDED=%d\n",GST);
+ printf("TOTAL AMOUNT TO BE PAID=%d\n",M);
+ printf("THANQ VISIT AGAIN\n");
+ }
